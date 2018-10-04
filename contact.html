@@ -9,30 +9,36 @@
 </head>
 <body>
     <div class="navbar">
-        <h1 class="heading-font">Benjamin Lowry</h1>
-        <div class="nav-buttons">
-            <button>About</button>
-            <button>Portfolio</button>
-            <button>Contact</button>
-        </div>
-    </div>        
+    <h1 class="heading-font">Benjamin Lowry</h1>
+        <ul>
+            <li class="nav-button"><a href="index.html">About</a></li>
+            <li class="nav-button"><a href="contact.html">Contact</a></li>
+            <li class="nav-button"><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+     </div>       
     <!--End nav bar top of page-->
     <hr>
-    <h2 class="heading-font">Contact</h2>
+    <h2 class="heading-two">Contact</h2>
     <section class="main-content">
-        <form>
-            Name<br>
-            <input type="text" name="name"><br>
-            Email<br>
-            <input type="email" name="email"><br>
-            <br>
-            <textarea name="comment">Please leave comments and questions here</textarea>
-        </form>
-        <button>Submit</button>
+        <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="lastname" placeholder="Your email address..">
+          
+              <label for="message">Message</label>
+              <textarea id="subject" name="message" placeholder="Write something.."></textarea>
+          
+              <input id="submit" type="submit" value="Submit">          
+            </form>
+        </div>
     </section>
     <!--End of main content section-->
     <footer class="sticky-footer">
-        <strong><p>&copy</p></strong>
+        <strong><p>Copyright &copy</p></strong>
     </footer>    
 </body>
 </html>
