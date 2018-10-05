@@ -2,8 +2,25 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/gravel.png);
+}
+
+#profile-pic {
+    float: left;
+    padding-right: 15px;
+    height: 200px;
+    width: 200px;
+}/*Note that image black space around top and bottom is part of photo. Will replace with a higher quality photo soon*/
+
 .navbar {
     overflow: hidden;
+    width
 }
 
 .nav-button {
@@ -16,13 +33,18 @@
     color: #777777
 }
 
-.main-content {
-    min-height: calc(80vh - 30px);
+.nav-btn-wrapper {
+    margin-right: 245px;
+    margin-bottom: 0;
+}
+
+.main-content { 
     width: 960px;
     margin: auto;
     text-align: center;
-    background-color: #eeeeee;
+    background-color: #e4dcdc;
     border: solid 2px #dddddd;
+    border-radius: 15px;  
 }
 
 .sticky-footer {
@@ -30,6 +52,15 @@
     height: 50px;
     border-top: 2px solid #4aaaa5;
     background: #666666;
+}
+
+.push {
+    height: 50px;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
 }
 
 .heading-font {
@@ -40,7 +71,8 @@
     display: inline-block;
     border-radius: 4px;
     margin-left: 275px;
-    margin-bottom: 0%;
+    margin-bottom: 0;
+    padding: 7px;
 }
 
 .heading-two {
@@ -48,16 +80,10 @@
     color: #4aaaa5;
 }
 
-#profile-pic {
-    float: left;
-    padding-right: 15px;
-}
-
 .text {
     text-align: center;
 }
-
-.container, 
+ 
 input,
 textarea {
     width: 100%;
@@ -73,20 +99,14 @@ textarea {
     width: 75px;
 }
 
-body {
-    background-image: url("assets/images/gravel.png");/*File path to image listed but cannot get image to appear for body background*/
-}
-
+/*
 ul {
     margin: 0;
 }
+*/
 
 li { 
-    border-right: solid 1px #ddcfbc;/*tried to use a pseudo class here li:not(last:child)*/
-}
-
-h1 {
-
+    border-right: solid 1px #c7c4c0;/*tried to use a pseudo class here li:not(last:child) to take off line divider from "about" link*/
 }
 
 p {
