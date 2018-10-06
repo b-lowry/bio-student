@@ -11,16 +11,8 @@ body {
     background-image: url(../images/gravel.png);
 }
 
-#profile-pic {
-    float: left;
-    padding-right: 15px;
-    height: 200px;
-    width: 200px;
-}/*Note that image black space around top and bottom is part of photo. Will replace with a higher quality photo soon*/
-
 .navbar {
     overflow: hidden;
-    width
 }
 
 .nav-button {
@@ -41,15 +33,16 @@ body {
 .main-content { 
     width: 960px;
     margin: auto;
+    margin-top: 30px;
     text-align: center;
-    background-color: #e4dcdc;
+    background-color: #ffffff;
     border: solid 2px #dddddd;
     border-radius: 15px;  
 }
 
 .sticky-footer {
     text-align: center;
-    height: 50px;
+    height: 60px;
     border-top: 2px solid #4aaaa5;
     background: #666666;
 }
@@ -60,7 +53,7 @@ body {
 
 .wrapper {
     min-height: 100%;
-    margin-bottom: -50px;
+    margin-bottom: -60px;
 }
 
 .heading-font {
@@ -70,20 +63,23 @@ body {
     color: white;
     display: inline-block;
     border-radius: 4px;
-    margin-left: 275px;
+    margin-left: 285px;
     margin-bottom: 0;
     padding: 7px;
 }
 
 .heading-two {
-    margin-left: 275px;
+    margin-left: 25px;
     color: #4aaaa5;
+    text-align: left;
 }
 
-.text {
-    text-align: center;
+.input-name{
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
 }
- 
+
+
 input,
 textarea {
     width: 100%;
@@ -94,16 +90,49 @@ textarea {
     margin-bottom: 16px;
 }
 
+
+
 #submit {
     background-color: #4aaaa5;
     width: 75px;
 }
 
-/*
-ul {
+#subject {
+    height: 200px;
+}
+
+/*Attempted many ways to make inputs in contact form a smaller width as well as labels aligned to left side but kept breaking the form into multiple pieces. Need to allocate classes and divs for all properties inside input and text area selectors.*/
+
+
+.hr-outside {
     margin: 0;
 }
-*/
+
+.hr-inside {
+    margin-bottom: 30px;
+    width: 95%;
+    height: 4px;
+    background-color: #dad1d1;
+}
+
+.portfolio-work {
+    text-align: left;
+    padding: 0px 30px 0px 30px;
+}
+
+.portfolio-work img {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+#profile-pic {
+    float: left;
+    padding-right: 15px;
+    height: 200px;
+    width: 200px;
+    margin-left: 25px;
+}
 
 li { 
     border-right: solid 1px #c7c4c0;/*tried to use a pseudo class here li:not(last:child) to take off line divider from "about" link*/
@@ -118,14 +147,10 @@ a {
     text-decoration: none;
 }
 
-hr {
-    margin: 0;
-}
-
 a:visited, a:active {
     color: inherit;
 }
 
 a:hover {
-    color: #a0062c;
+    color: #000000;
 }
